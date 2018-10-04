@@ -1,0 +1,62 @@
+/* The header element should have a 1px goldenrod border*/
+header{
+  border: 1px goldenrod;
+}
+/* Convert the ul element in the navigation element into a series of horizontal links with # as the href value without bullets and have some space between them horizontally */
+nav > ul > li{
+  display: inline-block;
+  cursor: pointer;
+  list-style: none;
+  padding: 20px;
+}
+
+/*Any text in an element with class "disabled" should be colored grey, unless it is inside an anchor tag, if inside an anchor tag it should be colored purple.*/
+.disabled:not(a){
+  color: grey;
+}
+
+ a.disabled{ 
+  color: purple;
+}
+
+/* Any text in an element with class of "active" should be colored yellow*/
+.active {
+  color: yellow;
+}
+
+/* Make the "I'm red" text colored red*/
+.parent div div:first-child{
+  color: red;
+}
+
+/* Make the "I'm blue" text colored blue*/
+.parent div div{
+  color: blue;
+}
+
+/* The sibling H4 of the red element should have a background color of red*/
+.parent div div:first-child + h4{
+  background-color: red;
+}
+
+/* The sibling H4 of the blue element should have a background color of blue*/
+.parent div div + h4{
+  background-color: blue;
+}
+
+/* Any H4 that is a direct child of grandparent should have a 1px border with rounded corners.*/
+.grandparent > h4{
+  border: 1px black solid; 
+  border-radius: 25px;
+}
+
+/* Elements with a class of "promo" should have bold text that is also colored gold.*/
+.promo{
+  font-weight: bold;
+  color: gold;
+}
+
+/* Withough adding any other attributes to the "input" fields in the footer, write a CSS selector that makes any text input field have a height of 25px*/
+input {
+  height: 25px;
+} 
