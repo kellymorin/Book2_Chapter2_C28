@@ -1,6 +1,4 @@
 # Styling with CSS Selectors
-
-## Assignment
 Using a provided HTML boilerplate, we were asked to make the following changes using exclusively CSS selectors
 
   1. The header element should have a 1px, goldenrod border.
